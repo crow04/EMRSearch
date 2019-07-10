@@ -1,0 +1,18 @@
+﻿{
+	"processing": "加载中...",
+	"lengthMenu": "每页显示 _MENU_ 条记录",
+	"zeroRecords": "无符合条件结果",
+	"info": "第 <span>_PAGE_</span> 页, 共 <span>_PAGES_</span> 页, &nbsp; <span>_TOTAL_</span> 条数据",
+	"infoEmpty": "无数据",
+	"emptyTable": "无数据",
+	"infoFiltered": "(从 _MAX_ 条记录中过滤)",
+	"infoPostFix": "",
+	"search": "查询",
+	"url": "",
+	"paginate": {
+		"first":    "&laquo;",
+		"previous": "&lsaquo;",
+		"next":     "&rsaquo;",
+		"last":     "&raquo;"
+	}
+}

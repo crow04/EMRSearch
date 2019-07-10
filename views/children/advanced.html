@@ -1,0 +1,166 @@
+﻿<div class="advanced">
+    <div class="advanced-header">
+        <a class="btn btn-info" data-toggle="modal" data-target="#advancedModal">编辑条件</a>
+        <a class="btn btn-info inactive clearBtn">清除条件</a>
+        <a class="btn btn-info commitBtn">提交搜索</a>
+    </div>
+    <div class="advanced-content">
+        <!-- <span class="select-element lastest">并且 <i class="fa fa-edit logical-edit"></i></span> -->
+    </div>
+</div>
+<div class="modal fade" id="advancedModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <div class="tabs-title">
+                    <a class="tab-name" href="javascript:void(0)">患者信息</a>
+                    <a class="tab-name" href="javascript:void(0)">疾病</a>
+                    <a class="tab-name" href="javascript:void(0)">症状</a>
+                    <a class="tab-name" href="javascript:void(0)">药品</a>
+                    <a class="tab-name" href="javascript:void(0)">手术</a>
+                    <a class="tab-name" href="javascript:void(0)">化验指标</a>
+                    <a class="tab-name" href="javascript:void(0)">生命体征</a>
+                    <a class="tab-name" href="javascript:void(0)">检查报告</a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="tabs-contaier">
+                    <div class="tab-content patientInfo">
+                        <div class="condition-container">
+                            <select id="PAInfoSelect" class="selectpicker " data-live-search="true">
+                                <option value="1">年龄</option>
+                                <option value="1">登记号</option>
+                                <option value="2">身份证号</option>
+                                <option value="3">就诊号</option>
+                            </select>
+                            <span class="separator">--</span>
+                            <select class="selectpicker condition-select" data-live-search="true">
+                                <option value="eq">等于</option>
+                                <option value="gt">大于</option>
+                                <option value="lt">小于</option>
+                                <option value="neq">不等于</option>
+                            </select>
+                            <span class="separator">--</span>
+                            <input type="text" class="paInfoInput form-control" placeholder="请输入..." />
+                        </div>
+                    </div>
+                    <div class="tab-content illness">
+                        <div class="conditiones">
+
+                        </div>
+                        <div class="tab-content-header">
+                            <input type="text" id="illnessSearch" class="illness-search form-control"
+                                placeholder="请输入搜索关键词">
+                            <div class="switch">
+                                <div class="switch-item-group">
+                                    <a class="btn btn-default switch-item active">包含</a>
+                                    <a class=" btn btn-default switch-item">不包含</a>
+                                    <div style="clear:both"></div>
+                                </div>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="tab-content-body ">
+                            <div class="tab-content-body-left">
+                                <ul class="illnessTypeList">
+                                    <li class="active">小儿心血管科</li>
+                                    <li>小儿血液肿瘤科</li>
+                                    <li>小儿呼吸免疫科</li>
+                                    <li>小儿遗传代谢内分泌科</li>
+                                    <li>新生儿科</li>
+                                    <li>小儿感染科</li>
+                                    <li>小儿消化科</li>
+                                    <li>小儿肾脏科</li>
+                                </ul>
+                            </div>
+                            <div class="tab-content-body-right">
+                                <span class="select-element">小儿心肌炎 </span>
+                                <span class="select-element">小儿机急性心包炎</span>
+                                <span class="select-element">缩窄性心包炎</span>
+                                <span class="select-element">风湿性心脏病</span>
+                                <span class="select-element">小儿高血压</span>
+                                <span class="select-element">先天性心脏病</span>
+                                <span class="select-element">法洛氏四联症</span>
+                                <span class="select-element">先天性房间隔缺损</span>
+                                <span class="select-element">原发性心肌炎</span>
+                                <span class="select-element">川崎病</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content symptom">
+                        <div class="conditiones">
+
+                        </div>
+                        <div class="tab-content-header">
+                            <input type="text" id="illnessSearch" class="illness-search form-control"
+                                placeholder="请输入搜索关键词">
+                            <div class="switch">
+                                <div class="switch-item-group">
+                                    <a class="btn btn-default switch-item active" data-key="">包含</a>
+                                    <a class=" btn btn-default switch-item" data-key="">不包含</a>
+                                    <div style="clear:both"></div>
+                                </div>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="tab-content-body ">
+                            <div class="tab-content-body-right">
+                                <span class="select-element">紫绀</span>
+                                <span class="select-element">心脏杂音</span>
+                                <span class="select-element">心功能不全</span>
+                                <span class="select-element">呼吸困难</span>
+                                <span class="select-element">反复呼吸道感染</span>
+                                <span class="select-element">发育迟缓</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content drags">
+                        药品
+                    </div>
+                    <div class="tab-content operation">
+                        手术
+                    </div>
+                    <div class="tab-content laboratory">
+                        化验指标
+                    </div>
+                    <div class="tab-content vitalSigns">
+                        生命体征
+                    </div>
+                    <div class="tab-content pacsReport">
+                        检查报告
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="comfirmBtn">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade" id="logiclModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="#advancedModal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">选择关系</h4>
+            </div>
+            <div class="modal-body">
+                <select name="logiclSignSelect" id="logiclSignSelect">
+                    <option value="and">并且</option>
+                    <option value="or">或者</option>
+                    <option value="">非</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary confirm">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script src="../script/advanced.js"></script>
